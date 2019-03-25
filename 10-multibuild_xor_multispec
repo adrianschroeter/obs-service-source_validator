@@ -13,7 +13,7 @@ test -z "$DESTINATIONDIR" -a -d "$DIR_TO_CHECK/.osc" && DESTINATIONDIR="$DIR_TO_
 RETURN=0
 
 if [ -f "$DIR_TO_CHECK/_multibuild" -a $(ls -1 "$DIR_TO_CHECK/"*.spec | wc -l) -gt 1 ]; then
-	echo "ERROR: we support EITHER _multibuild OR multiple spec files. Do not add both"
+	echo "ERROR: openSUSE Factory project is support EITHER _multibuild OR multiple spec files. Do not add both"
 	RETURN=1
 fi
 
